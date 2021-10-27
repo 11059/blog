@@ -19,3 +19,10 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+import logging
+
+logger=logging.getLogger('django')
+logger.debug("这是debug")
+logger.info('这是info')
+logger.error("这是error")
